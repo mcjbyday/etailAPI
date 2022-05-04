@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     const categories = await Category.findAll({
       // be sure to include its associated Products
       // Add products as a model to JOIN with
-      include: [{ model: Product}],
+      include: { model: Product},
     });
     res.status(200).json(categories);
   } catch (err) {
@@ -23,7 +23,7 @@ router.get('/:id', async (req, res) => {
     const category = await Category.findByPk(req.params.id, {
       // Add products as a model to JOIN with
       // be sure to include its associated Products
-      include: [{ model: Product }],
+      include: { model: Product},
     });
 
     if (!category) {
