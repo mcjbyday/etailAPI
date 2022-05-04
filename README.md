@@ -6,7 +6,7 @@
 
 -[Description](#project-desc)
 
--[See it Live](#project-tech)
+-[See How It Works](#project-tech)
 
 -[Screen Captures](#project-captures)
 

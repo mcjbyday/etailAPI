@@ -16,7 +16,9 @@ Product.belongsTo(Category, {
 });
 
 // Define a Category as having many Products, thus creating a foreign key in the `product` table
-Category.hasMany(Product);
+Category.hasMany(Product, {
+  foreignKey: 'category_id',
+});
 
 // Product belongs to many Tag models, and Tag belongs to many Product models. Allow products to have multiple tags and tags to have many products by using the ProductTag through model.
 // Products belongToMany Tags (through ProductTag)
@@ -24,12 +26,14 @@ Category.hasMany(Product);
 
 Product.belongsToMany(Tag, { 
   through: {model: ProductTag},
-  unique: false
+  unique: false,
+  foreignKey: 'product_id'
 });
 
 Tag.belongsToMany(Product, { 
   through: {model: ProductTag},
-  unique: false
+  unique: false,
+  foreignKey: 'tag_id'
 });
 
 
