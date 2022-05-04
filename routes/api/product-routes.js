@@ -13,6 +13,12 @@ router.get('/', async (req, res) => {
       // be sure to include its associated Products
       // Add products as a model to JOIN with
       include: [{ model: Category}, { model: Tag}],
+      // include: [Category,
+      // {
+      //   model: Tag,
+      //   through: ProductTag,
+      // }
+      // ]
     });
     res.status(200).json(products);
   } catch (err) {
