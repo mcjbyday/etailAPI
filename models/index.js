@@ -22,7 +22,6 @@ Category.hasMany(Product);
 // Products belongToMany Tags (through ProductTag)
 // Tags belongToMany Products (through ProductTag
 
-// Belongs-To-Many will create unique key on through model by default, currently overridden below with uniqueKey: false
 Product.belongsToMany(Tag, { 
   through: {model: ProductTag}
 });
