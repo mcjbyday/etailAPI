@@ -28,13 +28,13 @@ The etailAPI is an ecommerce api that makes use of object relational model techn
 
 <h2 id="project-live">See it in action!</h2>
 
-[See the application in action here]/)
+[See the application in action here](https://drive.google.com/file/d/184JCMEyJLuMZOgLnqpEkrlzdkWfaCdaZ/view?usp=sharing)
 
 <h2 id="project-captures">Screen captures</h2>
 
 | Image | Description |
 | --- | ----------- |
-|  ![]() | Application in use |
+|  ![Terminal Usage of Application](./assets/screencapture_terminal.png) | Application in use |
 
 
 <h2 id="project-tech">Technology</h2>
